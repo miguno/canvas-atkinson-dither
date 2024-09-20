@@ -4,7 +4,7 @@ The classic Macintosh 1-bit filter, as used by [Hyperdither](http://www.tinrocke
 
 Compares every pixel to 50% grey, then changes them to either black or white.
 The difference between the input and the output is then distributed to the
-neighbouring pixels [as follows][2] (X is the current pixel):
+neighbouring pixels as follows (X is the current pixel):
 
          X  1/8 1/8
     1/8 1/8 1/8
@@ -16,5 +16,3 @@ events](https://web.dev/articles/read-files#toc-selecting-files-dnd),
 and the
 [FileReader](https://developer.mozilla.org/en-US/docs/Web/API/FileReader) API so
 you'll need a current browser to try it.
-
-[2]: http://verlagmartinkoch.at/software/dither/index.html
