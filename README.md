@@ -1,7 +1,7 @@
 # Atkinson dithering example
 
 The classic Macintosh 1-bit filter, as used by
-[Hyperdither](http://www.tinrocket.com/software/hyperdither/).
+[HyperDither](https://www.tinrocket.com/content/hyperdither/).
 
 Compares every pixel to 50% grey, then changes them to either black or white.
 The difference between the input and the output is then distributed to the
