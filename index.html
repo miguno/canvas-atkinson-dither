@@ -57,33 +57,35 @@
      <div>
        <div class="progressbar">
          <div class="progresslevel" id="progresspercent"></div>
-       </div> 
+       </div>
        <!--<button id="cancel">Cancel</button>-->
      </div>
      </article>
    </div>
    <div id="helpwindow" class="window">
      <header><div class="close"></div><h1>What's this?</h1></header>
-     <article><p>This is an implementation of the classic Macintosh 1-bit filter, as used by <a href="http://www.tinrocket.com/software/hyperdither/">Hyperdither</a> and HyperScan originally.</p> 
+     <article><p>This is an implementation of the classic Macintosh 1-bit filter, as used by <a href="http://www.tinrocket.com/software/hyperdither/">Hyperdither</a> and HyperScan originally.</p>
  
-<p>It compares every pixel to 50% grey, then changes them to either black or white. The difference between the input and the output is then distributed to the neighbouring pixels <a href="http://verlagmartinkoch.at/software/dither/index.html">as follows</a> (X is the current pixel):</p> 
+<p>It compares every pixel to 50% grey, then changes them to either black or white. The difference between the input and the output is then distributed to the neighbouring pixels as follows (<code>X</code> is the current pixel):</p>
  
 <pre><code>     X  1/8 1/8
 1/8 1/8 1/8
     1/8
-</code></pre> 
+</code></pre>
  
-<p>The rendered image can be rightclicked-saved. (Due to limitations of the browsers(?) you cannot drag it to the desktop)
+<p>The rendered image can be saved by clicking the "Save to Desktop" button or by right-clicking the image and selecting "Save Image As ...". Due to limitations of most browsers, you cannot simply drag the image to the desktop.</p>
  
-<p>This code uses Canvas, <a href="http://www.html5rocks.com/en/tutorials/file/dndfiles/#toc-selecting-files-dnd">Drag and Drop events</a>, <a href="https://developer.mozilla.org/en/using_web_workers">WebWorkers</a> and the <a href="https://developer.mozilla.org/en/DOM/FileReader">FileReader</a> API so you'll need the newest and shiniest browser to try it.</p></article> 
+<p>This code uses Canvas, <a href="https://web.dev/articles/read-files#toc-selecting-files-dnd">Drag and Drop events</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers">WebWorkers</a> and the <a href="https://developer.mozilla.org/en-US/docs/Web/API/FileReader">FileReader</a> API so you'll need the newest and shiniest browser to try it.</p></article>
    </div>
 
    <div class="window headless" id="aboutwindow">
      <article>
-     <p>Atkinson dithering demo app</p>
+     <p>Atkinson Dithering demo app</p>
      <p>written by Gáspár Körtesi</p>
      <p>&lt;<a href="mailto:gazs@bergengocia.net">gazs@bergengocia.net</a>&gt;</p>
+     <p><a href="https://github.com/gazs/canvas-atkinson-dither" target="_blank">Original code</a> (2010-2016)</p>
      <img src="avatar.png" style="position:absolute; right:40px; top:25px">
+     <p>Virtue font by <a href="http://www.scootergraphics.com/" target="_blank">Martin P. Pfeiffer</a></p>
      <button class="close" style="position:absolute; right:20px; top:82px;">OK</button>
      </article>
    </div>
