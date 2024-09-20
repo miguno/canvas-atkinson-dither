@@ -3,6 +3,8 @@
 The classic Macintosh 1-bit filter, as used by
 [HyperDither](https://www.tinrocket.com/content/hyperdither/).
 
+## How it works
+
 Compares every pixel to 50% grey, then changes them to either black or white.
 The difference between the input and the output is then distributed to the
 neighbouring pixels as follows (X is the current pixel):
@@ -12,6 +14,10 @@ neighbouring pixels as follows (X is the current pixel):
 1/8 1/8 1/8
     1/8
 ```
+
+Example screenshot:
+
+<a href="https://github.com/miguno/canvas-atkinson-dither/blob/master/example.png"><img src="https://github.com/miguno/canvas-atkinson-dither/blob/master/example.png" alt="Dithering example" width="300"></a><br />
 
 ## How to run
 
