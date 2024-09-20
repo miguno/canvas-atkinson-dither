@@ -3,6 +3,11 @@
 The classic Macintosh 1-bit filter, as used by
 [HyperDither](https://www.tinrocket.com/content/hyperdither/).
 
+This project was originally created 2010-2016 by
+[@gazs](https://github.com/gazs)
+([sources](https://github.com/gazs/canvas-atkinson-dither), [live
+demo](https://gazs.github.io/canvas-atkinson-dither/)).
+
 ## How it works
 
 Compares every pixel to 50% grey, then changes them to either black or white.
