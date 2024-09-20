@@ -19,9 +19,11 @@ Example screenshot:
 
 <a href="https://github.com/miguno/canvas-atkinson-dither/blob/master/example.png"><img src="https://github.com/miguno/canvas-atkinson-dither/blob/master/example.png" alt="Dithering example" width="300"></a><br />
 
-## How to run
+## How to run locally
 
 Requires `npm`.
+
+Start a local web server to run the demo app:
 
 ```
 ./start.sh
@@ -31,6 +33,6 @@ Requires `npm`.
 
 This code uses [Drag and Drop
 events](https://web.dev/articles/read-files#toc-selecting-files-dnd),
-[WebWorkers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers)
+[WebWorkers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers),
 and the
 [FileReader](https://developer.mozilla.org/en-US/docs/Web/API/FileReader) API.
